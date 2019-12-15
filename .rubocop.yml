@@ -1,0 +1,25 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  Exclude:
+    - "bin/**/*"
+    - "config/**/*"
+    - "db/schema.rb"
+  TargetRubyVersion: 2.6.1
+
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+  Enabled: true
+
+Metrics/MethodLength:
+  Max: 15
+  Enabled: true
+Metrics/BlockLength:
+  Enabled: false
